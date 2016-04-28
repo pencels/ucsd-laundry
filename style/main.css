@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic);
+
+/* Normalize spacing */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto' !important;
+}
+
+body { padding-top: 70px; }
+
+/* College colors/themes */
+.revelle {
+
+}
+
+.muir a {
+    color: #006633 !important; /* muir green */
+}
+
+.muir:hover {
+    background: #006633;
+}
+
+.muir:hover a {
+    color: white !important;
+}
+
+.marshall {
+
+}
+
+.warren {
+
+}
+
+.erc {
+
+}
+
+.sixth {
+
+}
+
+h1 {
+    font-family: Helvetica, Arial, sans-serif;
+}
