@@ -3,13 +3,11 @@
     <head>
         <title>UCSD Laundry Queue App</title>
 
-        <link href='./style/main.css' rel='stylesheet' type='text/css' />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+              integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-
-
-        <!-- BOOSTRAP -->
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel='newest stylesheet' href='./style/main.css' type='text/css' />
 
     </head>
     <body>
@@ -19,25 +17,34 @@
                     <a class="navbar-brand" href="./index.html">Laundry Queue</a>
                 </div>
 
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="revelle"><a href="./revelle.html">Revelle</a></li>
-                        <li class="muir"><a href="#">Muir</a></li>
-                        <li class="marshall"><a href="./marshall.html">Marshall</a></li>
-                        <li class="warren"><a href="./warren.html">Warren</a></li>
-                        <li class="erc"><a href="./erc.html">ERC</a></li>
-                        <li class="sixth"><a href="./sixth.html">Sixth</a></li>
+                        <li class="revelle"><a data-toggle="tab" href="#revelle-tab">Revelle</a></li>
+                        <li class="muir"><a data-toggle="tab" href="#muir-tab">Muir</a></li>
+                        <li class="marshall"><a data-toggle="tab" href="#marshall-tab">Marshall</a></li>
+                        <li class="warren"><a data-toggle="tab" href="#warren-tab">Warren</a></li>
+                        <li class="erc"><a data-toggle="tab" href="#erc-tab">ERC</a></li>
+                        <li class="sixth"><a data-toggle="tab" href="#sixth-tab">Sixth</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <div class="container">
-            <h1>Petty? Maybe.</h1>
+            <div class="tab-content">
+                <div class="tab-pane active">
+                    <h1>Petty? Maybe.</h1>
 
-            <div id='messagesDiv'></div>
-            <input type='text' id='nameInput' placeholder='Name'>
-            <input type='text' id='messageInput' placeholder='Message'>
-
+                    <div id='messagesDiv'></div>
+                    <input type='text' id='nameInput' placeholder='Name'>
+                    <input type='text' id='messageInput' placeholder='Message'>
+                </div>
+                <div class="tab-pane" id="revelle-tab">Revelle</div>
+                <div class="tab-pane" id="muir-tab">Muir</div>
+                <div class="tab-pane" id="marshall-tab">Marshall</div>
+                <div class="tab-pane" id="warren-tab">Warren</div>
+                <div class="tab-pane" id="erc-tab">ERC</div>
+                <div class="tab-pane" id="sixth-tab">Sixth</div>
+            </div>
         </div>
         <!-- JQuery -->
         <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
@@ -70,7 +77,8 @@
         </script>
         <!-- End own script -->
 
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+                integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     </body>
 </html>
