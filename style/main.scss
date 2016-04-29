@@ -17,7 +17,7 @@ $revelle-color: #1F3D7C;
 $muir-color: #006633;
 $marshall-color: #B50A0F;
 $warren-color: #68161C;
-$erc-color: #F4E100;
+$erc-color: #652D91;
 $sixth-color: #00778B;
 
 @mixin color-nav($parent, $college, $color) {
@@ -26,12 +26,16 @@ $sixth-color: #00778B;
             color: $color;
         }
 
-        a:hover, a:focus {
+        &.active a, a:hover, a:focus {
+            transition: 0.3s;
             color: #eee;
             background: $color;
         }
+
+        border-bottom: 3px solid $color;
     }
 }
+
 $nav-stuff: 'navbar-default .nav';
 @include color-nav($nav-stuff, revelle, $revelle-color);
 @include color-nav($nav-stuff, muir, $muir-color);

@@ -10,51 +10,58 @@ body {
   cursor: pointer; }
 
 /* College colors/themes */
-.navbar-default .nav > li.revelle a {
-  color: #1F3D7C; }
-.navbar-default .nav > li.revelle a:hover, .navbar-default .nav > li.revelle a:focus {
-  color: #eee;
-  background: #1F3D7C; }
+.navbar-default .nav > li.revelle {
+  border-bottom: 3px solid #1F3D7C; }
+  .navbar-default .nav > li.revelle a {
+    color: #1F3D7C; }
+  .navbar-default .nav > li.revelle.active a, .navbar-default .nav > li.revelle a:hover, .navbar-default .nav > li.revelle a:focus {
+    transition: 0.3s;
+    color: #eee;
+    background: #1F3D7C; }
 
-.navbar-default .nav > li.muir a {
-  color: #006633; }
-.navbar-default .nav > li.muir a:hover, .navbar-default .nav > li.muir a:focus {
-  color: #eee;
-  background: #006633; }
+.navbar-default .nav > li.muir {
+  border-bottom: 3px solid #006633; }
+  .navbar-default .nav > li.muir a {
+    color: #006633; }
+  .navbar-default .nav > li.muir.active a, .navbar-default .nav > li.muir a:hover, .navbar-default .nav > li.muir a:focus {
+    transition: 0.3s;
+    color: #eee;
+    background: #006633; }
 
-.navbar-default .nav > li.marshall a {
-  color: #B50A0F; }
-.navbar-default .nav > li.marshall a:hover, .navbar-default .nav > li.marshall a:focus {
-  color: #eee;
-  background: #B50A0F; }
+.navbar-default .nav > li.marshall {
+  border-bottom: 3px solid #B50A0F; }
+  .navbar-default .nav > li.marshall a {
+    color: #B50A0F; }
+  .navbar-default .nav > li.marshall.active a, .navbar-default .nav > li.marshall a:hover, .navbar-default .nav > li.marshall a:focus {
+    transition: 0.3s;
+    color: #eee;
+    background: #B50A0F; }
 
-.navbar-default .nav > li.warren a {
-  color: #68161C; }
-.navbar-default .nav > li.warren a:hover, .navbar-default .nav > li.warren a:focus {
-  color: #eee;
-  background: #68161C; }
+.navbar-default .nav > li.warren {
+  border-bottom: 3px solid #68161C; }
+  .navbar-default .nav > li.warren a {
+    color: #68161C; }
+  .navbar-default .nav > li.warren.active a, .navbar-default .nav > li.warren a:hover, .navbar-default .nav > li.warren a:focus {
+    transition: 0.3s;
+    color: #eee;
+    background: #68161C; }
 
-.navbar-default .nav > li.erc a {
-  color: #F4E100; }
-.navbar-default .nav > li.erc a:hover, .navbar-default .nav > li.erc a:focus {
-  color: #eee;
-  background: #F4E100; }
+.navbar-default .nav > li.erc {
+  border-bottom: 3px solid #652D91; }
+  .navbar-default .nav > li.erc a {
+    color: #652D91; }
+  .navbar-default .nav > li.erc.active a, .navbar-default .nav > li.erc a:hover, .navbar-default .nav > li.erc a:focus {
+    transition: 0.3s;
+    color: #eee;
+    background: #652D91; }
 
-.navbar-default .nav > li.sixth a {
-  color: #00778B; }
-.navbar-default .nav > li.sixth a:hover, .navbar-default .nav > li.sixth a:focus {
-  color: #eee;
-  background: #00778B; }
-
-.navbar-default .nav > li.muir a {
-  color: #006633; }
-.navbar-default .nav > li.marshall a {
-  color: #B50A0F; }
-.navbar-default .nav > li.warren a {
-  color: #68161C; }
-.navbar-default .nav > li.erc a {
-  color: #F4E100; }
-.navbar-default .nav > li.sixth a {
-  color: #00778B; }
+.navbar-default .nav > li.sixth {
+  border-bottom: 3px solid #00778B; }
+  .navbar-default .nav > li.sixth a {
+    color: #00778B; }
+  .navbar-default .nav > li.sixth.active a, .navbar-default .nav > li.sixth a:hover, .navbar-default .nav > li.sixth a:focus {
+    transition: 0.3s;
+    color: #eee;
+    background: #00778B; }
 
 /*# sourceMappingURL=main.css.map */
