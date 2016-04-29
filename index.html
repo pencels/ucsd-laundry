@@ -3,16 +3,20 @@
     <head>
         <title>UCSD Laundry Queue App</title>
 
+        <!-- Make mobile-friendly  -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-              integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+              integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+              crossorigin="anonymous">
 
+        <!-- Own CSS -->
         <link rel='newest stylesheet' href='./style/main.css' type='text/css' />
 
     </head>
     <body>
+        <!-- NAVBAR -->
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header-navbar">
@@ -21,71 +25,50 @@
                     <span class="icon-bar"></span>
                 </button>
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="./index.html">Laundry Queue</a>
+                    <a class="navbar-brand" data-toggle="tab" href="#home">Laundry Queue</a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="header-navbar">
                     <ul class="nav navbar-nav">
-                        <li class="revelle"><a data-toggle="tab" href="#revelle-tab">Revelle</a></li>
-                        <li class="muir active"><a data-toggle="tab" href="#muir-tab">Muir</a></li>
-                        <li class="marshall"><a data-toggle="tab" href="#marshall-tab">Marshall</a></li>
-                        <li class="warren"><a data-toggle="tab" href="#warren-tab">Warren</a></li>
-                        <li class="erc"><a data-toggle="tab" href="#erc-tab">ERC</a></li>
-                        <li class="sixth"><a data-toggle="tab" href="#sixth-tab">Sixth</a></li>
+                        <li class="revelle-nav"><a data-toggle="tab" href="#revelle-tab">Revelle</a></li>
+                        <li class="muir-nav"><a data-toggle="tab" href="#muir-tab">Muir</a></li>
+                        <li class="marshall-nav"><a data-toggle="tab" href="#marshall-tab">Marshall</a></li>
+                        <li class="warren-nav"><a data-toggle="tab" href="#warren-tab">Warren</a></li>
+                        <li class="erc-nav"><a data-toggle="tab" href="#erc-tab">ERC</a></li>
+                        <li class="sixth-nav"><a data-toggle="tab" href="#sixth-tab">Sixth</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+        <!-- BODY/TABS -->
         <div class="container">
             <div class="tab-content">
-                <div class="tab-pane">
+                <div class="tab-pane active fade in" id="home">
                     <h1>Petty? Maybe.</h1>
-
-                    <div id='messagesDiv'></div>
-                    <input type='text' id='nameInput' placeholder='Name'>
-                    <input type='text' id='messageInput' placeholder='Message'>
+                    <div>Under construction.</div>
                 </div>
-                <div class="tab-pane fade" id="revelle-tab">Revelle</div>
-                <div class="tab-pane active" id="muir-tab">Muir</div>
-                <div class="tab-pane fade" id="marshall-tab">Marshall</div>
-                <div class="tab-pane fade" id="warren-tab">Warren</div>
-                <div class="tab-pane fade" id="erc-tab">ERC</div>
-                <div class="tab-pane fade" id="sixth-tab">Sixth</div>
+                <div class="tab-pane fade" id="revelle-tab"></div>
+                <div class="tab-pane fade" id="muir-tab"></div>
+                <div class="tab-pane fade" id="marshall-tab"></div>
+                <div class="tab-pane fade" id="warren-tab"></div>
+                <div class="tab-pane fade" id="erc-tab"></div>
+                <div class="tab-pane fade" id="sixth-tab"></div>
             </div>
         </div>
+
         <!-- JQuery -->
-        <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
         <!-- DB Access -->
         <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
 
         <!-- Own Script -->
         <script src="./js/main.js"></script>
-        <script>
-            var myDataRef = new Firebase('https://hxbslovok1q.firebaseio-demo.com/');
-            $('#messageInput').keypress(function (e) {
-              if (e.keyCode == 13) {
-                  var name = $('#nameInput').val();
-                  var text = $('#messageInput').val();
-                  myDataRef.push({name: name, text: text});
-                  $('#messageInput').val('');
-              }
-            });
-
-            myDataRef.on('child_added', function (snapshot) {
-              var message = snapshot.val();
-              displayChatMessage(message.name, message.text);
-            });
-
-            function displayChatMessage(name, text) {
-              $('<div/>').text(text).prepend($('<em/>').text(name+': ')).appendTo($('#messagesDiv'));
-              $('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;
-
-            }
-        </script>
         <!-- End own script -->
 
         <!-- Bootstrap JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-                integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+                integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+                crossorigin="anonymous"></script>
     </body>
 </html>

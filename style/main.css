@@ -1,102 +1,97 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic);
-/* Normalize spacing */
-body {
-  margin: 0;
-  padding: 0;
-  padding-top: 70px;
-  font-family: 'Roboto'; }
-
 .nav a {
   cursor: pointer; }
 
-/* College colors/themes */
-.navbar-default .nav > li.revelle a {
+body {
+  padding-top: 70px; }
+
+.navbar-default .nav > li.revelle-nav a {
   color: #1F3D7C; }
-.navbar-default .nav > li.revelle.active a, .navbar-default .nav > li.revelle a:hover, .navbar-default .nav > li.revelle a:focus {
+.navbar-default .nav > li.revelle-nav.active a, .navbar-default .nav > li.revelle-nav a:hover, .navbar-default .nav > li.revelle-nav a:focus {
   transition: 0.3s;
   color: #eee;
   background: #1F3D7C; }
 @media (min-width: 768px) {
-  .navbar-default .nav > li.revelle {
+  .navbar-default .nav > li.revelle-nav {
     border-left: none;
     border-bottom: 3px solid #1F3D7C; } }
 @media (max-width: 767px) {
-  .navbar-default .nav > li.revelle {
+  .navbar-default .nav > li.revelle-nav {
     border-bottom: none;
     border-left: 3px solid #1F3D7C; } }
 
-.navbar-default .nav > li.muir a {
+.navbar-default .nav > li.muir-nav a {
   color: #006633; }
-.navbar-default .nav > li.muir.active a, .navbar-default .nav > li.muir a:hover, .navbar-default .nav > li.muir a:focus {
+.navbar-default .nav > li.muir-nav.active a, .navbar-default .nav > li.muir-nav a:hover, .navbar-default .nav > li.muir-nav a:focus {
   transition: 0.3s;
   color: #eee;
   background: #006633; }
 @media (min-width: 768px) {
-  .navbar-default .nav > li.muir {
+  .navbar-default .nav > li.muir-nav {
     border-left: none;
     border-bottom: 3px solid #006633; } }
 @media (max-width: 767px) {
-  .navbar-default .nav > li.muir {
+  .navbar-default .nav > li.muir-nav {
     border-bottom: none;
     border-left: 3px solid #006633; } }
 
-.navbar-default .nav > li.marshall a {
+.navbar-default .nav > li.marshall-nav a {
   color: #B50A0F; }
-.navbar-default .nav > li.marshall.active a, .navbar-default .nav > li.marshall a:hover, .navbar-default .nav > li.marshall a:focus {
+.navbar-default .nav > li.marshall-nav.active a, .navbar-default .nav > li.marshall-nav a:hover, .navbar-default .nav > li.marshall-nav a:focus {
   transition: 0.3s;
   color: #eee;
   background: #B50A0F; }
 @media (min-width: 768px) {
-  .navbar-default .nav > li.marshall {
+  .navbar-default .nav > li.marshall-nav {
     border-left: none;
     border-bottom: 3px solid #B50A0F; } }
 @media (max-width: 767px) {
-  .navbar-default .nav > li.marshall {
+  .navbar-default .nav > li.marshall-nav {
     border-bottom: none;
     border-left: 3px solid #B50A0F; } }
 
-.navbar-default .nav > li.warren a {
+.navbar-default .nav > li.warren-nav a {
   color: #68161C; }
-.navbar-default .nav > li.warren.active a, .navbar-default .nav > li.warren a:hover, .navbar-default .nav > li.warren a:focus {
+.navbar-default .nav > li.warren-nav.active a, .navbar-default .nav > li.warren-nav a:hover, .navbar-default .nav > li.warren-nav a:focus {
   transition: 0.3s;
   color: #eee;
   background: #68161C; }
 @media (min-width: 768px) {
-  .navbar-default .nav > li.warren {
+  .navbar-default .nav > li.warren-nav {
     border-left: none;
     border-bottom: 3px solid #68161C; } }
 @media (max-width: 767px) {
-  .navbar-default .nav > li.warren {
+  .navbar-default .nav > li.warren-nav {
     border-bottom: none;
     border-left: 3px solid #68161C; } }
 
-.navbar-default .nav > li.erc a {
+.navbar-default .nav > li.erc-nav a {
   color: #652D91; }
-.navbar-default .nav > li.erc.active a, .navbar-default .nav > li.erc a:hover, .navbar-default .nav > li.erc a:focus {
+.navbar-default .nav > li.erc-nav.active a, .navbar-default .nav > li.erc-nav a:hover, .navbar-default .nav > li.erc-nav a:focus {
   transition: 0.3s;
   color: #eee;
   background: #652D91; }
 @media (min-width: 768px) {
-  .navbar-default .nav > li.erc {
+  .navbar-default .nav > li.erc-nav {
     border-left: none;
     border-bottom: 3px solid #652D91; } }
 @media (max-width: 767px) {
-  .navbar-default .nav > li.erc {
+  .navbar-default .nav > li.erc-nav {
     border-bottom: none;
     border-left: 3px solid #652D91; } }
 
-.navbar-default .nav > li.sixth a {
+.navbar-default .nav > li.sixth-nav a {
   color: #00778B; }
-.navbar-default .nav > li.sixth.active a, .navbar-default .nav > li.sixth a:hover, .navbar-default .nav > li.sixth a:focus {
+.navbar-default .nav > li.sixth-nav.active a, .navbar-default .nav > li.sixth-nav a:hover, .navbar-default .nav > li.sixth-nav a:focus {
   transition: 0.3s;
   color: #eee;
   background: #00778B; }
 @media (min-width: 768px) {
-  .navbar-default .nav > li.sixth {
+  .navbar-default .nav > li.sixth-nav {
     border-left: none;
     border-bottom: 3px solid #00778B; } }
 @media (max-width: 767px) {
-  .navbar-default .nav > li.sixth {
+  .navbar-default .nav > li.sixth-nav {
     border-bottom: none;
     border-left: 3px solid #00778B; } }
 
