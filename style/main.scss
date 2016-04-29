@@ -32,7 +32,16 @@ $sixth-color: #00778B;
             background: $color;
         }
 
-        border-bottom: 3px solid $color;
+        @media (min-width:768px) {
+            border-left: none;
+            border-bottom: 3px solid $color;
+        }
+
+        @media (max-width:767px) {
+            border-bottom: none;
+            border-left: 3px solid $color;
+        }
+
     }
 }
 
