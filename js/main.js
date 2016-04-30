@@ -28,7 +28,6 @@ function parseLocations(college, locations) {
             var room_box = document.createElement('div');
             room_box.setAttribute('class', college + ' room');
 
-
             var room_header = document.createElement('h4');
             room_header.appendChild(document.createTextNode(room));
             room_box.appendChild(room_header);

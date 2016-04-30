@@ -1,12 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic);
+//====== College colors/themes ======//
+$revelle-color: #1F3D7C;
+$muir-color: #006633;
+$marshall-color: #B50A0F;
+$warren-color: #68161C;
+$erc-color: #652D91;
+$sixth-color: #00778B;
 
 //====== Custom SCSS ======//
+$vertical-padding: 70px;
+
 .nav a {
     cursor: pointer;
 }
 
 body {
-    padding-top: 70px;
+    padding-top: $vertical-padding;
+    padding-bottom: $vertical-padding;
 }
 
 //====== Styling Location <div>s ======//
@@ -16,16 +26,35 @@ body {
 
 .room {
 //    border: 1px dashed gray;
+    color: white;
+    padding: 10px;
+
+    &.revelle {
+        background: $revelle-color;
+    }
+
+    &.muir {
+        background: $muir-color;
+    }
+
+    &.marshall {
+        background: $marshall-color;
+    }
+
+    &.warren {
+        background: $warren-color;
+    }
+
+    &.erc {
+        background: $erc-color;
+    }
+
+    &.sixth {
+        background: $sixth-color;
+    }
 }
 
-//====== College colors/themes ======//
-$revelle-color: #1F3D7C;
-$muir-color: #006633;
-$marshall-color: #B50A0F;
-$warren-color: #68161C;
-$erc-color: #652D91;
-$sixth-color: #00778B;
-
+//======== tabs ============//
 @mixin color-nav($parent, $college, $color) {
     .#{$parent}> li.#{$college} {
         a {

@@ -3,7 +3,24 @@
   cursor: pointer; }
 
 body {
-  padding-top: 70px; }
+  padding-top: 70px;
+  padding-bottom: 70px; }
+
+.room {
+  color: white;
+  padding: 10px; }
+  .room.revelle {
+    background: #1F3D7C; }
+  .room.muir {
+    background: #006633; }
+  .room.marshall {
+    background: #B50A0F; }
+  .room.warren {
+    background: #68161C; }
+  .room.erc {
+    background: #652D91; }
+  .room.sixth {
+    background: #00778B; }
 
 .navbar-default .nav > li.revelle-nav a {
   color: #1F3D7C; }
